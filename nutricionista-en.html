@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritionist</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css.css"/>
+    <script src="java.js"></script>
+</head>
+<body onload="hideul()">
+    <div class="search"> 
+        <input type="text" id="myInput" onkeyup="myFunction2()" placeholder="Search" >
+        <ul id="myUL">
+          <li><a href="yoga1-en.html">Vinyasa Yoga</a></li>
+          <li><a href="yoga2-en.html">Hatha Yoga</a></li> 
+          <li><a href="yoga3-en.html">Restorative Yoga</a></li>
+          <li><a href="pilates1-en.html">Classical pilates</a></li>
+          <li><a href="pilates2-en.html">Stott pilates</a></li>
+          <li><a href="pilates3-en.html">Reformer pilates</a></li>
+          <li><a href="core1-en.html">Glute and Core</a></li>
+          <li><a href="core2-en.html">Power Core</a></li>
+          <li><a href="core3-en.html">Cardio Core</a></li>
+          <li><a href="cardio1-en.html">Spinning</a></li>
+          <li><a href="cardio2-en.html">Crazy Cardio</a></li>
+          <li><a href="cardio3-en.html">HIIT</a></li>
+        </ul> 
+      </div> 
+      <img src="cda2081dfd2b1af5c0444a032294965c.png" class="logo" alt="logo">
+      <h1 class="naslov">Fitnes centar V&M</h1>
+      <div class="meni">
+      <div class="topnav" id="myTopnav">
+      <a href="poc-en.html">Home</a>
+      <div class="dropdown2 active">
+        <button class="dropbtn2 active">Services</button>
+        <div class="dropdown-content2 active">
+          <a href="treninzi-en.html">Trainings</a>
+          <a href="nutricionista-en.html" class="active">Nutritionist</a>
+          <a href="masaze-en.html">Masage</a>
+        </div>
+      </div>
+      <a href="zakazivanje-en.html">Reservation of trainings</a>
+      <a href="nalog-en.html">My account</a> 
+      <a href="about-en.html">About</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    </div>
+    <a href="poc-en.html"><img src="brit.png" alt="" class="flag"></a>
+      <a href="index.html"><img src="serbia.png" alt="" class="flag"></a>
+      <div class="onama">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9"><h2>Nutritionist</h2></div> 
+          </div>
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>  
+            <div class="col-sm-9"><img src="nutricionista.jpg" width="35%" height="55%" class="nutricionista" alt=""> Nutritionist - The role of a nutritionist is to teach you how to eat properly without being hungry, exhausted and without energy. It is necessary to enter all food groups in order to satisfy all the needs of the organism. Proper and balanced diet includes intake of meat, milk and dairy products, fish, eggs, fruits, vegetables, cereals, sugars and oils. All this is necessary for our organism. </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9"><h3>Reserve</h3></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9">
+                 <form action="#" onsubmit="return generatenutri()">
+                    <table>
+                        <tr>
+                            <td>Name: </td>
+                            <td><input type="text" minlength="3" required id="ime"></td>
+                        </tr>
+                        <tr>
+                            <td>Surname: </td>
+                            <td><input type="text" minlength="3" required id="prezime"></td>
+                        </tr>
+                        <tr>
+                            <td>Mail: </td>
+                            <td><input type="email" required id="mail"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone: </td>
+                            <td><input type="tel" pattern="[0-9]{3}/[0-9]{3}-[0-9]{2}-[0-9]{2}" id="tel" required></td>
+                        </tr>
+                        <tr>
+                            <td>Date: </td>
+                            <td><input type="date" id="datum" required></td>
+                        </tr>
+                        <tr>
+                          <td>Description:  </td>
+                          <td><textarea id="opis"  rows="4" cols=""></textarea></td>
+                        </tr>
+                        <tr>
+                          <td><button type="submit">Send and reserve
+                          </button> </td>
+                          <td><button type="reset">Clear</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9"><br><br>Copyright 2020,  Добросав Влашковић и Јана Милосављевић,  Одсек  за  софтверско  инжењерство  Електротехничког  факултета Универзитета  у  Београд</div> 
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

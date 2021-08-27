@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatha Yoga</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body onload="hideul()">
+    <div class="search"> 
+        <input type="text" id="myInput" onkeyup="myFunction2()" placeholder="Search" >
+        <ul id="myUL">
+          <li><a href="yoga1-en.html">Vinyasa Yoga</a></li>
+          <li><a href="yoga2-en.html">Hatha Yoga</a></li> 
+          <li><a href="yoga3-en.html">Restorative Yoga</a></li>
+          <li><a href="pilates1-en.html">Classical pilates</a></li>
+          <li><a href="pilates2-en.html">Stott pilates</a></li>
+          <li><a href="pilates3-en.html">Reformer pilates</a></li>
+          <li><a href="core1-en.html">Glute and Core</a></li>
+          <li><a href="core2-en.html">Power Core</a></li>
+          <li><a href="core3-en.html">Cardio Core</a></li>
+          <li><a href="cardio1-en.html">Spinning</a></li>
+          <li><a href="cardio2-en.html">Crazy Cardio</a></li>
+          <li><a href="cardio3-en.html">HIIT</a></li>
+        </ul> 
+      </div> 
+      <a href="poc-en.html"><img src="brit.png" alt="" class="flag"></a>
+  <a href="index.html"><img src="serbia.png" alt="" class="flag"></a>
+      <img src="cda2081dfd2b1af5c0444a032294965c.png" class="logo" alt="logo">
+      <h1 class="naslov">Fitnes centar V&M</h1>
+      <div class="meni">
+      <div class="topnav" id="myTopnav">
+      <a href="poc-en.html">Home</a>
+      <div class="dropdown2 active">
+        <button class="dropbtn2 active">Services</button>
+        <div class="dropdown-content2 active">
+          <a href="treninzi-en.html" class="active">Trainings</a>
+          <a href="nutricionista-en.html">Nutritionist</a>
+          <a href="masaze-en.html">Masage</a>
+        </div>
+      </div>
+      <a href="zakazivanje-en.html">Reservation of trainings</a>
+      <a href="nalog-en.html">My account</a> 
+      <a href="about-en.html">About</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    </div>
+    <div class="onama">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <a href="yoga1-en.html" class="podnav">Vinyasa Yoga</a>&nbsp;
+                        <a href="yoga2-en.html" class="podnav active">Hatha Yoga</a>&nbsp;
+                        <a href="yoga3-en.html" class="podnav">Restorative Yoga</a>
+            </div>
+            <div class="col-sm-9"><h2>Hatha Yoga <span>(3)</span></h2></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><span  onmouseover="starmark(this,4)" onclick="result()" id="1one" style="font-size:40px;cursor:pointer;"  class="fa fa-star checked"></span>
+              <span onmouseover="starmark(this,4)" onclick="result()" id="2one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+              <span onmouseover="starmark(this,4)" onclick="result()" id="3one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+              <span onmouseover="starmark(this,4)" onclick="result()" id="4one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+              <span onmouseover="starmark(this,4)" onclick="result()" id="5one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+              <span id="rate">4.3</span>
+            </div>
+            <div class="col-sm-9">This is generally the type that is implied when someone talks about yoga. It is based on the breath, body and mind. It works on a combination of yoga poses and meditation, focusing on static poses. It has a calming effect on the whole body, as well as on the psyche, but it can be very challenging, although it is considered a gentle type of yoga. </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+              <div class="col-sm-3">&nbsp;</div>
+              <div class="col-sm-9"><img src="ts/hatha yoga.jpg" width="100%" height="100%" alt=""></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9">
+              <form action="#"  onsubmit="comment(4);return false;">
+                <table>
+                    <tr>
+                        <td>Name: </td>
+                        <td><input type="text" minlength="3" required id="ime"></td>
+                    </tr>
+                    <tr>
+                        <td>Surname: </td>
+                        <td><input type="text" minlength="3" required id="prezime"></td>
+                    </tr>
+                    <tr>
+                        <td>Mail: </td>
+                        <td><input type="email" required id="mail"></td>
+                    </tr>
+                    <tr>
+                      <td>Comment: </td>
+                      <td><textarea id="opis" rows="4" cols=""></textarea></td>
+                    </tr>
+                    <tr>
+                      <td><button type="submit">Send</button> </td>
+                      <td><button type="reset">Clear</button></td>
+                    </tr>
+                </table>
+            </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9"><h2>User's comments</h2></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9"><div id="comm">
+              <h3>Jana Milosavljevic</h3>
+              <p>Odlican trening</p>
+              <hr>
+              <h3>Dobrosav Vlaskovic</h3>
+              <p>Odlican trening, sve pohvale</p>
+              <hr>
+            </div></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+        <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9"><br><br>Copyright 2020,  Добросав Влашковић и Јана Милосављевић,  Одсек  за  софтверско  инжењерство  Електротехничког  факултета Универзитета  у  Београд</div> 
+        </div>
+        </div>
+      </div>
+    </body>
+    </html>

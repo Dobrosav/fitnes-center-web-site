@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css.css"/>
+<script src="java.js"></script>
+<title>Fitnes centar-Pocetna</title>
+<script type="text/javascript">
+  var image1=new Image()
+  image1.src="s1.jpg"
+  var image2=new Image()
+  image2.src="s2.jpg"
+  var image3=new Image()
+  image3.src="s3.jpg"
+  var image4=new Image()
+  image4.src="ff.png"
+</script>
+</head>
+<body onload="hideul()">
+  <div class="search"> 
+    <input type="text" id="myInput" onkeyup="myFunction2()" placeholder="Traži treninge" >
+    <ul id="myUL">
+      <li><a href="yoga1.html">Vinyasa Yoga</a></li>
+      <li><a href="yoga2.html">Hatha Yoga</a></li> 
+      <li><a href="yoga3.html">Restorative Yoga</a></li>
+      <li><a href="pilates1.html">Classical pilates</a></li>
+      <li><a href="pilates2.html">Stott pilates</a></li>
+      <li><a href="pilates3.html">Reformer pilates</a></li>
+      <li><a href="core1.html">Glute and Core</a></li>
+      <li><a href="core2.html">Power Core</a></li>
+      <li><a href="core3.html">Cardio Core</a></li>
+      <li><a href="cardio1.html">Spinning</a></li>
+      <li><a href="cardio2.html">Crazy Cardio</a></li>
+      <li><a href="cardio3.html">HIIT</a></li>
+    </ul> 
+  </div> 
+  <img src="cda2081dfd2b1af5c0444a032294965c.png" class="logo" alt="logo">
+  <h1 class="naslov">Fitnes centar V&M</h1>
+  <div class="meni">
+  <div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <div class="dropdown2">
+    <button class="dropbtn2">Usluge </button>
+    <div class="dropdown-content2">
+      <a href="treninzi.html">Treninzi</a>
+      <a href="nutricionista.html">Nutricionista</a>
+      <a href="masaze.html">Masaze</a>
+    </div>
+  </div>
+  <a href="zakazivanje.html">Zakazivanje treninga</a>
+  <a href="nalog.html">Moj nalog</a> 
+  <a href="about.html">O nama</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</div>
+    <a href="poc-en.html"><img src="brit.png" alt="" class="flag"></a>
+      <a href="index.html"><img src="serbia.png" alt="" class="flag"></a>
+      <img src="s1.jpg" class="slider center" name="slide">
+ <div class="position">
+      <div class="container">
+    <div class="row">
+      <div class="col-sm-3">&nbsp;</div>
+      <div class="col-sm-9">Dobrodošli na sajt na kome možete pored informacija o radu našeg fitnes centra naći i mnoge savete o zdravom žvotu.
+<br><br>
+        Zadovoljstvo nam je da Vam ponudimo najsavremenije uslove za trening i rekreaciju. Trend zdravog načina života nikada ne prestaje da bude aktuelan i zato se neprestano traga za boljim uslovima zivota i treninga. Navika redovnog vežbanja je dovoljna da se proces starenja uspori i da duže ostanemo mladi i u formi. Zato je fitnes centar <B>V&M</B>, miran kutak za Vas i mesto gde možete ostvariti sve svoje vežbačke ciljeve. Dovoljno je samo da nas posetite.
+    <br><br>    
+       <b> Uživajte na našem sajtu i vežbajući kod nas!</b>
+    <br>
+    <br/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">&nbsp;</div>
+      <div class="col-sm-9 active"><h2>Najbolje ocenjeni treninzi</h2></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">&nbsp;</div>
+      <div class="col-sm-9 active"><h3>Crazy Cardio 4.7 <span class="fa fa-star checked"></span></h3></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">&nbsp;</div>
+      <div class="col-sm-9 active"><h3>Cardio Core 4.65 <span class="fa fa-star checked"></span></h3></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">&nbsp;</div>
+      <div class="col-sm-9 active"><h3>Vinyasa yoga 4.4 <span class="fa fa-star checked"></span></h3></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">&nbsp;</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">&nbsp;</div>
+      <div class="col-sm-9">Copyright 2020,  Добросав Влашковић и Јана Милосављевић,  Одсек  за  софтверско  инжењерство  Електротехничког  факултета Универзитета  у  Београд</div> 
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  var step=1
+  function slideit(){
+  document.images.slide.src=eval("image"+step+".src")
+  if(step<4)
+  step++
+  else
+  step=1
+  setTimeout("slideit()",2500)
+  }
+  slideit()
+  </script>
+  
+</body>
+</html>

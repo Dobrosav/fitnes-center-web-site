@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatha Yoga </title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css.css"/>
+    <script src="java.js"></script>
+</head>
+<body onload="hideul()">
+  <div class="search"> 
+    <input type="text" id="myInput" onkeyup="myFunction2()" placeholder="Traži treninge" >
+    <ul id="myUL">
+      <li><a href="yoga1.html">Vinyasa Yoga</a></li>
+      <li><a href="yoga2.html">Hatha Yoga</a></li> 
+      <li><a href="yoga3.html">Restorative Yoga</a></li>
+      <li><a href="pilates1.html">Classical pilates</a></li>
+      <li><a href="pilates2.html">Stott pilates</a></li>
+      <li><a href="pilates3.html">Reformer pilates</a></li>
+      <li><a href="core1.html">Glute and Core</a></li>
+      <li><a href="core2.html">Power Core</a></li>
+      <li><a href="core3.html">Cardio Core</a></li>
+      <li><a href="cardio1.html">Spinning</a></li>
+      <li><a href="cardio2.html">Crazy Cardio</a></li>
+      <li><a href="cardio3.html">HIIT</a></li>
+    </ul> 
+  </div>  
+  <a href="poc-en.html"><img src="brit.png" alt="" class="flag"></a>
+  <a href="index.html"><img src="serbia.png" alt="" class="flag"></a>
+  <img src="cda2081dfd2b1af5c0444a032294965c.png" class="logo" alt="logo">
+    <h1 class="naslov">Fitnes centar V&M</h1>
+    <div class="meni">
+    <div class="topnav" id="myTopnav">
+    <a href="index.html" >Home</a>
+    <div class="dropdown2 active">
+      <button class="dropbtn2">Usluge </button>
+      <div class="dropdown-content2">
+        <a href="treninzi.html" class="active">Treninzi</a>
+        <a href="nutricionista.html">Nutricionista</a>
+        <a href="masaze.html">Masaze</a>
+      </div>
+    </div>
+    <a href="zakazivanje.html">Zakazivanje treninga</a>
+    <a href="nalog.html">Moj nalog</a> 
+    <a href="about.html">O nama</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </div>
+  <div class="onama">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="yoga1.html" class="podnav">Vinyasa Yoga</a>&nbsp;
+                    <a href="yoga2.html" class="podnav active">Hatha Yoga</a>&nbsp;
+                    <a href="yoga3.html" class="podnav">Restorative Yoga</a>
+        </div>
+        <div class="col-sm-9"><h2>Hatha Yoga <span>(3)</span></h2></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3"><span  onmouseover="starmark(this,4)" onclick="result()" id="1one" style="font-size:40px;cursor:pointer;"  class="fa fa-star checked"></span>
+          <span onmouseover="starmark(this,4)" onclick="result()" id="2one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+          <span onmouseover="starmark(this,4)" onclick="result()" id="3one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+          <span onmouseover="starmark(this,4)" onclick="result()" id="4one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+          <span onmouseover="starmark(this,4)" onclick="result()" id="5one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+          <span id="rate">4.3</span>
+        </div>
+        <div class="col-sm-9">Ovo je generalno tip koji se podrazumeva kad neko priča o jogi. Bazira se na dahu, telu i umu. Radi se na kombinaciji joga poza i meditacije, fokusira se na statičkim pozama. Umirujuće deluje na celo telo, kao i na psihu, ali može biti vrlo izazovna, iako se smatra nežnom vrstom joge. </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">&nbsp;</div>
+      </div>
+      <div class="row">
+          <div class="col-sm-3">&nbsp;</div>
+          <div class="col-sm-9"><img src="ts/hatha yoga.jpg" width="100%" height="100%" alt=""></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-9">
+          <form action="#"  onsubmit="comment(4);return false;">
+            <table>
+                <tr>
+                    <td>Ime: </td>
+                    <td><input type="text" minlength="3" required id="ime"></td>
+                </tr>
+                <tr>
+                    <td>Prezime: </td>
+                    <td><input type="text" minlength="3" required id="prezime"></td>
+                </tr>
+                <tr>
+                    <td>Mail: </td>
+                    <td><input type="email" required id="mail"></td>
+                </tr>
+                <tr>
+                  <td>Komentar: </td>
+                  <td><textarea id="opis" rows="4" cols=""></textarea></td>
+                </tr>
+                <tr>
+                  <td><button type="submit">Pošalji</button> </td>
+                  <td><button type="reset">Obrisi podatke</button></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-9"><h2>Komentari Korisnika</h2></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-9"><div id="comm">
+          <h3>Jana Milosavljevic</h3>
+          <p>Odlican trening</p>
+          <hr>
+          <h3>Dobrosav Vlaskovic</h3>
+          <p>Odlican trening, sve pohvale</p>
+          <hr>
+        </div></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">&nbsp;</div>
+      </div>
+    <div class="row">
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-9"><br><br>Copyright 2020,  Добросав Влашковић и Јана Милосављевић,  Одсек  за  софтверско  инжењерство  Електротехничког  факултета Универзитета  у  Београд</div> 
+    </div>
+    </div>
+  </div>
+</body>
+</html>

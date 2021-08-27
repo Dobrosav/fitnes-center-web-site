@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trening Zakazivanje</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css.css"/>
+    <script src="java.js"></script>
+</head>
+<body onload="rename()">
+<img src="cda2081dfd2b1af5c0444a032294965c.png" class="logo" alt="logo">
+    <h1 id="Naziv" class="naslov"></h1>
+    <table id="table" border="1" class="table">
+        <tr>
+            <td>&nbsp;</td>
+            <td>Pon/Mon</td>
+            <td>Uto/Tue</td>
+            <td>Sre/Wed</td>
+            <td>Čet/Thu</td>
+            <td>Pet/Fri</td>
+        </tr>
+        <tr>
+            <td>10<sup>00</sup>-10<sup>45</sup></td>
+            <td><button type="button" onclick="reserve('Ponedeljak/Monday 10:00-10:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Utorak/Tuesday 10:00-10:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Sreda/Wednesday 10:00-10:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Četvrtak/Thursday 10:00-10:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Petak/Friday 10:00-10:45')" class="btns">Zakaži/Reserve</button></td>
+        </tr>
+        <tr>
+            <td>11<sup>00</sup>-11<sup>45</sup></td>
+            <td><button type="button" onclick="reserve('Ponedeljak/Monday 11:00-11:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Utorak/Tuesday 11:00-11:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Sreda/Wednesday 11:00-11:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Četvrtak/Thursday 11:00-11:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Petak/Friday 11:00-11:45')" class="btns">Zakaži/Reserve</button></td>
+        </tr>
+        <tr>
+            <td>12<sup>00</sup>-12<sup>45</sup></td>
+            <td><button type="button" onclick="reserve('Ponedeljak/Monday 12:00-12:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Utorak/Tuesday 12:00-12:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Sreda/Wednesday 12:00-12:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Četvrtak/Thursday 12:00-12:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Petak/Friday 12:00-12:45')" class="btns">Zakaži/Reserve</button></td>
+        </tr>
+        <tr>
+            <td>13<sup>00</sup>-13<sup>45</sup></td>
+            <td><button type="button" onclick="reserve('Ponedeljak/Monday 13:00-13:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Utorak/Tuesday 13:00-13:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Sreda/Wednesday 13:00-13:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Četvrtak/Thursday 13:00-13:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Petak/Friday 13:00-13:45')" class="btns">Zakaži/Reserve</button></td>
+        </tr>
+        <tr>
+            <td>14<sup>00</sup>-14<sup>45</sup></td>
+            <td><button type="button" onclick="reserve('Ponedeljak/Monday 14:00-14:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Utorak/Tuesday 14:00-14:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Sreda/Wednesday 14:00-14:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Četvrtak/Thursday 14:00-14:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Petak/Friday 14:00-14:45')" class="btns">Zakaži/Reserve</button></td>
+        </tr>
+        <tr>
+            <td>15<sup>00</sup>-15<sup>45</sup></td>
+            <td><button type="button" onclick="reserve('Ponedeljak/Monday 15:00-15:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Utorak/Tuesday 15:00-15:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Sreda/Wednesday 15:00-15:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Četvrtak/Thursday 15:00-15:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Petak/Friday 15:00-15:45')" class="btns">Zakaži/Reserve</button></td>
+        </tr>
+        <tr>
+            <td>16<sup>00</sup>-16<sup>45</sup></td>
+            <td><button type="button" onclick="reserve('Ponedeljak/Monday 16:00-16:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Utorak/Tuesday 16:00-16:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Sreda/Wednesday 16:00-16:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Četvrtak/Thursday 16:00-16:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Petak/Friday 16:00-16:45')" class="btns">Zakaži/Reserve</button></td>
+        </tr>
+        <tr>
+            <td>17<sup>00</sup>-17<sup>45</sup></td>
+            <td><button type="button" onclick="reserve('Ponedeljak/Mondays 17:00-17:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Utorak/Tuesday 17:00-17:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Sreda/Wednesday 17:00-17:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Četvrtak/Thursday 17:00-17:45')" class="btns">Zakaži/Reserve</button></td>
+            <td><button type="button" onclick="reserve('Petak/Friday 17:00-17:45')" class="btns">Zakaži/Reserve</button></td>
+        </tr>
+    </table>
+</body>
+</html>

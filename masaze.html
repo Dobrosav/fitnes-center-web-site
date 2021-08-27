@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitnes centar- Masaze</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css.css"/>
+    <script src="java.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="jspdf.min.js"></script>
+    <script>
+
+       </script>
+</head>
+    <body onload="hideul()">
+      <div class="search"> 
+        <input type="text" id="myInput" onkeyup="myFunction2()" placeholder="Traži treninge" >
+        <ul id="myUL">
+          <li><a href="yoga1.html">Vinyasa Yoga</a></li>
+          <li><a href="yoga2.html">Hatha Yoga</a></li> 
+          <li><a href="yoga3.html">Restorative Yoga</a></li>
+          <li><a href="pilates1.html">Classical pilates</a></li>
+          <li><a href="pilates2.html">Stott pilates</a></li>
+          <li><a href="pilates3.html">Reformer pilates</a></li>
+          <li><a href="core1.html">Glute and Core</a></li>
+          <li><a href="core2.html">Power Core</a></li>
+          <li><a href="core3.html">Cardio Core</a></li>
+          <li><a href="cardio1.html">Spinning</a></li>
+          <li><a href="cardio2.html">Crazy Cardio</a></li>
+          <li><a href="cardio3.html">HIIT</a></li>
+        </ul> 
+      </div> 
+      <a href="poc-en.html"><img src="brit.png" alt="" class="flag"></a>
+      <a href="index.html"><img src="serbia.png" alt="" class="flag"></a>
+        <img src="cda2081dfd2b1af5c0444a032294965c.png" class="logo" alt="logo">
+        <h1 class="naslov">Fitnes centar V&M</h1>
+        <div class="meni">
+        <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <div class="dropdown2 active">
+          <button class="dropbtn2 active">Usluge </button>
+          <div class="dropdown-content2">
+            <a href="treninzi.html">Treninzi</a>
+            <a href="nutricionista.html" >Nutricionista</a>
+            <a href="masaze.html" class="active">Masaze</a>
+          </div>
+        </div>
+        <a href="zakazivanje.html">Zakazivanje treninga</a>
+        <a href="nalog.html">Moj nalog</a> 
+        <a href="about.html">O nama</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      </div>
+      <div class="onama">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9"><h2>Masaže</h2></div> 
+          </div>
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>  
+            <div class="col-sm-9"><img src="masaza.jpg" width="35%" height="55%" class="nutricionista" alt=""> 
+
+                Masaža predstavlja sistem metodičkih pokreta ruku tj. hvatova koje terapeut primenjuje na pacijenta. Masaža može biti terapeutska, sportska, relaksirajuća, aromatska anticelulit itd. Ima direktno mehaničko dejstvo na tkiva čovečjeg organizma. Vodite računa o tome da masažu obavlja pravilno samo stručno lice sa izvežbanim pokretima, poznavljanjem anatomije i problema tela vezanih za masažu. </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9"><img src="s8.jpg" alt="" width="100%" height="100%"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9"><h3>Zakažite masažu</h3></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9">
+                 <form action="#" onsubmit="return generatemasage()">
+                    <table>
+                        <tr>
+                            <td>Ime: </td>
+                            <td><input type="text" minlength="3" required id="ime"></td>
+                        </tr>
+                        <tr>
+                            <td>Prezime: </td>
+                            <td><input type="text" minlength="3" required id="prezime"></td>
+                        </tr>
+                        <tr>
+                            <td>Mail: </td>
+                            <td><input type="email" required id="mail"></td>
+                        </tr>
+                        <tr>
+                            <td>Telefon: </td>
+                            <td><input type="tel" id="tel" pattern="[0-9]{3}/[0-9]{3}-[0-9]{2}-[0-9]{2}" required></td>
+                        </tr>
+                        <tr>
+                            <td>Datum: </td>
+                            <td><input type="date"  id="datum" required></td>
+                        </tr>
+                        <tr>
+                          <td>Opis: </td>
+                          <td><textarea id="opis" rows="4" cols=""></textarea></td>
+                        </tr>
+                        <tr>
+                          <td><button type="submit">Posalji i generisi PDF</button> </td>
+                          <td><button type="reset">Obrisi podatke</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+          <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-9"><br><br>Copyright 2020,  Добросав Влашковић и Јана Милосављевић,  Одсек  за  софтверско  инжењерство  Електротехничког  факултета Универзитета  у  Београд</div> 
+          </div>
+        </div>
+      </div>
+</body>
+</html>
